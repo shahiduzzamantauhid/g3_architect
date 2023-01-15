@@ -138,6 +138,12 @@ nav li a {
   text-align: center;
   border-radius: 4px;
 }
+.col1:hover,
+.col2:hover,
+.col3:hover,
+.col4:hover{
+  background: gray;
+}
 
 /* sponsores section */
 .sponsore {
@@ -272,10 +278,19 @@ nav li a {
   align-items: center;
   margin-top: 50px;
 }
+.img_width{
+    width: 180px;
+    height: 60px;  
+}
+.img_width img{
+    max-width: 100%;
+}
+
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 512px !important;
+    width: 599px !important;
+    margin: auto !important;
   }
   h1 {
     font-family: "Work Sans";
@@ -303,7 +318,7 @@ nav li a {
     text-align: center;
   }
   nav ul {
-    display: block;
+    display: block !important;
     align-items: center;
   }
   nav li {
@@ -324,25 +339,25 @@ nav li a {
   }
   .hero-text {
     margin: 100px auto;
-    width: 65%;
+    width: 80%;
     line-height: 20px;
   }
   .hero_bg_img {
     background: url("images/banner.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 100% !important;
     height: 450px;
     border-radius: 8px;
   }
   .quick-list-images {
     display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    grid-template-areas: "img1" "img2" "img3"" img4";
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    grid-template-areas: "img1" "img2" "img3"" img4" !important;
     gap: 25px;
-    margin: auto;
+    margin: auto !important;
   }
   .quick{
     text-align: center;
@@ -350,6 +365,10 @@ nav li a {
   .our-feature{
     padding:50px 20px;
   }
+  .sponsore {
+    width: 90%;
+    margin: auto;
+    }
   .sponsors {
     display: flex;
     flex-wrap: wrap;
@@ -364,30 +383,35 @@ nav li a {
     margin: auto;
     margin-top: 25px;
     }
+    .img_width{
+        width: 100px;
+        height: 50px;  
+    }
+    
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 991px){
     .container {
-      width: 512px !important;
+      width: 800px !important;
     }
     h1 {
       font-family: "Work Sans";
       font-style: normal;
       font-weight: 700;
-      font-size: 35px;
+      font-size: 40px;
       line-height: 76px;
     }
     h2 {
       font-family: "Work Sans";
       font-style: normal;
       font-weight: 700;
-      font-size: 25px;
+      font-size: 28px;
       line-height: 47px;
     }
     h3 {
       font-family: "Work Sans";
       font-style: normal;
       font-weight: 700;
-      font-size: 22px;
+      font-size: 24px;
       line-height: 35px;
     }
     nav {
@@ -395,8 +419,9 @@ nav li a {
       text-align: center;
     }
     nav ul {
-      display: block;
-      align-items: center;
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
     nav li {
       list-style: none;
@@ -426,19 +451,18 @@ nav li a {
       background-size: cover;
       width: 100%;
       height: 450px;
+      width: 100%;
       border-radius: 8px;
     }
     .quick-list-images {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
-      grid-template-areas: "img1" "img2" "img3"" img4";
-      gap: 25px;
-      margin: auto;
-    }
-    .quick{
-      text-align: center;
-    }
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-template-areas: "img1 img2" "img3  img4";
+        gap: 25px;
+        margin: auto;
+      }
+    
     .our-feature{
       padding:50px 20px;
     }
@@ -448,6 +472,9 @@ nav li a {
       align-items: center;
       margin-top: 50px;
     }
+    .after_left_col {
+        padding: 20px;
+    }
     .fact_row {
       display: block;
       width: 100%;
@@ -456,5 +483,10 @@ nav li a {
       margin: auto;
       margin-top: 25px;
       }
+      .img_width{
+        width: 120px;
+        height: 60px;  
+    }
+    
   }
   
